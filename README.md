@@ -76,7 +76,20 @@ data = urllib.request.urlopen(url).read()
 ## Database Access
 
 ```python
+# SQL Commands Examples
+# Insert
+INSERT INTO Users (name, email) VALUES ('Kristin', 'kf@umich.edu')
 
+# Delete and Update
+DELETE FROM Users WHERE email='ted@umich.edu'
+UPDATE Users SET name='Charles' WHERE email='csev@umich.edu'
+
+# Retrieving Records
+SELECT * FROM Users
+SELECT * FROM Users WHERE email='csev@gmail.com'
+
+# Sorting Records
+SELECT * FROM Users ORDER BY email
 ```
 
 [Back To The Top](#python-for-everybody)
